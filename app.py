@@ -6,7 +6,7 @@ import ast
 app = Flask(__name__)
 api = Api(app)
 
-
+#class for users
 class Users(Resources):
     def get(self):
         data = pd.read_csv('users.csv')  # read CSV
